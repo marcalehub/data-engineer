@@ -1,0 +1,25 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//Query structure using DAX//
+////////////////////////////////////////////////////////////////////////////////////////////////////
+DEFINE
+	VAR filters = 
+		FILTER(
+			KEEPFILTERS(VALUES('table'[date])),
+			NOT('table'[date] IN {BLANK()})
+		)
+
+	VAR query = 
+		SUMMARIZECOLUMNS(
+			'table'[date],
+			filters,
+			"Dollars", CALCULATE(SUM('table'[dollars amount])),
+			"SALES_PER_DAY", CALCULATE(SUM('Avg. Daily Sales'[AVG. SALES PER DAY])),
+			"EXPECTING_SALES_BASE_ON_REMAINING", CALCULATE(SUM('Avg. Remaining'[AVG. EXPECTING SALES BASE ON REMAINING])),
+			"SUGGESTED_SALES_BASE_ON_REQUEST", CALCULATE(SUM('Avg. Sales Request'[AVG. SUGGESTED SALES BASE ON REQUEST]))
+		)
+
+EVALUATE
+	query
+
+ORDER BY
+	'table'[date]

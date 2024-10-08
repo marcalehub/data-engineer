@@ -1,0 +1,14 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//Measure to peform calculation partition by an attribute//
+////////////////////////////////////////////////////////////////////////////////////////////////////
+measure partition by = 
+    var amount = SUM(table[amount $])
+    var partitionby = CALCULATE(
+        SUM(
+            table[amount $]
+            ),
+            ALL(
+            table[country]
+            )
+        )
+    return amount/partitionby

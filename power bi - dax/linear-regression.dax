@@ -1,0 +1,10 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//Measure to peform linear regression - Note: remember this formula must have numbers only//
+////////////////////////////////////////////////////////////////////////////////////////////////////
+measure linear regression = 
+    var data = LINESTX(ALLSELECTED(table[months]), [avg. amount], table[months])
+    var slope = SELECTCOLUMNS(data, [Slope1])
+    var intercept = SELECTCOLUMNS(data, [Intercept])
+    var x = SELECTEDVALUE(table[months])
+    var y = x * slope + intercept
+    return y

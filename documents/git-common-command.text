@@ -1,0 +1,17 @@
+#for a better version control you must install git on your machine and use github to keep it on the cloud
+#Below common git commands
+
+git init #start a local respository on your machine
+git clone repository-url / directory-name #clonning a repository
+git remote add repository-url #adding repository
+git remote set-url repository-url #changing repository if username is changed
+git status #this code will show you a summary of the file you're about to push
+git add .  #adding all the file (only if need files were added)
+git commit -a -m "message here" #put the file on stage to be loaded to the repository
+git push #send your changes
+git pull #get your changes from server
+rm .git/index.lock if "Index.lock file blocked your process" 
+
+"undo commit base on index"
+git reset --soft HEAD~1 "undo commit base on index"
+git push origin +master --force
