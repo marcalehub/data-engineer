@@ -3,7 +3,7 @@
 This script helps you to keep app files up to date on destination removing manual drag and drop
 ####################################################################################################
 """
-function global:update-files{
+function global:update-folderFiles{
     param(
         $Source,
         $Folder,
