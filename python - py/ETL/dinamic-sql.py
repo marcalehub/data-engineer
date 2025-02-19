@@ -1,6 +1,18 @@
 """
 ####################################################################################################
 Dinamic Query using Python, passing variable define through the stament to avoid reworks
+
+Pre-requisites:
+1. Python
+
+Steps:
+1. The query will be stored in Dinamic_Query
+2. Use the Dinamic_Query as required
+3. Replace table with your table name
+4. The query will be stored in Dinamic_Query
+5. Use the Dinamic_Query as required
+6. Replace date_field with your date field
+7. Run the script
 ####################################################################################################
 """
 from datetime import datetime as dt

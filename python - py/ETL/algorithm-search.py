@@ -1,6 +1,30 @@
 """
 ####################################################################################################
 ##Algorithm Search##
+
+1. Linear Search:
+    - Time Complexity: O(n)
+    - Space Complexity: O(1)
+    - It is used to find the target in the list by iterating through each element in the list.
+
+2. Binary Search:
+    - Time Complexity: O(log n)
+    - Space Complexity: O(1)
+    - It is used to find the target in the list by dividing the list into half and checking the target with the midpoint.
+
+3. Recursive Binary Search:
+    - Time Complexity: O(log n)
+    - Space Complexity: O(log n)
+    - It is used to find the target in the list by dividing the list into half and checking the target with the midpoint recursively.
+
+Pre-requisites:
+1. Python
+
+Steps:
+1. The index position of the target will be returned
+2. If the target is not found, None will be returned
+3. Use the result as required
+4. Run the script
 ###################################################################################################
 """
 

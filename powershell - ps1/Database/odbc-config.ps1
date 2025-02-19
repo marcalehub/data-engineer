@@ -4,13 +4,15 @@ This script helps you to setting up odbc dsn to run query against database.
 
 Pre-requisites:
 1. Powershell
-2. ODBC driver
+2. ODBC driver:
+    - Install the ODBC driver
 
 Steps:
-1. Run the script
-2. Provide the name of the DSN
-3. The script will create the DSN with the provided name
-4. You can use the DSN to run queries against the database
+1. Provide the name of the DSN:
+    - set-odbc -name "DSN_NAME"
+2. The script will create the DSN with the provided name
+3. You can use the DSN to run queries against the database
+4. Run the script
 ####################################################################################################
 """
 function global:set-odbc{
