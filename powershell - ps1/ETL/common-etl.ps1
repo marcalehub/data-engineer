@@ -1,6 +1,16 @@
 """
 ####################################################################################################
 This script helps you to peform simple etl.
+
+Pre-requisites:
+1. Powershell
+2. ODBC driver
+
+Steps:
+1. Run the script
+2. Provide the DSN, USER_ID, PASSWORD and the query
+3. The script will run the query and return the result
+4. You can use the result for further processing
 ####################################################################################################
 """
 $odbc = New-Object System.Data.Odbc.OdbcConnection

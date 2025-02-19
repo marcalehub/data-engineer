@@ -1,6 +1,17 @@
 """
 ####################################################################################################
 This script helps you to send email automatically with a template body, usefull for sharing data.
+
+Pre-requisites:
+1. Powershell
+2. Outlook
+
+Steps:
+1. Run the script
+2. The script will send an email with the template body
+3. You can use the script for sending email automatically
+4. You can also attach files to the email
+
 ####################################################################################################
 """
 $outlook = new-object -comobject outlook.application 

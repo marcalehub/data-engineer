@@ -1,6 +1,16 @@
 """
 ####################################################################################################
 This script helps you to extract file automatically from email.
+
+Pre-requisites:
+1. Powershell
+2. Outlook
+
+Steps:
+1. Run the script
+2. The script will extract the file from the email
+3. You can use the file for further processing
+
 ####################################################################################################
 """
 $userid = $Env:USERNAME

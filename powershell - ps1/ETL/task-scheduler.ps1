@@ -1,6 +1,16 @@
 """
 ####################################################################################################
 This script helps you to setting up files script to be run on powershell.
+
+Pre-requisites:
+1. Powershell
+
+Steps:
+1. Run the script
+2. The script will set up the task scheduler
+3. You can use the task scheduler to run the script
+
+
 ####################################################################################################
 """
 function set-task{

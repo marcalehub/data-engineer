@@ -1,6 +1,18 @@
 """
 ####################################################################################################
 This script helps you to import your workspace data to be easily track on a pbi project.
+
+Pre-requisites:
+1. Powershell
+2. Power BI Service Account
+3. Power BI Workspace ID
+4. Power BI Dataset ID
+
+Steps:
+1. Run the script
+2. The script will import your workspace data
+3. You can use the data for further processing
+
 ####################################################################################################
 """
 $username = $env:USERNAME #computer id

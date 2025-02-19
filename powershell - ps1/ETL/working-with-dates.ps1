@@ -1,6 +1,15 @@
 """
 ####################################################################################################
-This script helps you to work with dates using python.
+This script helps you to work with dates using powershell.
+
+Pre-requisites:
+1. Powershell
+
+Steps:
+1. Run the script
+2. The script will show you how to work with dates using powershell
+3. You can use the script for further processing
+
 ####################################################################################################
 """
 $today = get-date #retrieve your machine local date and time

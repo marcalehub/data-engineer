@@ -1,5 +1,8 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //Measure to peform linear regression - Note: remember this formula must have numbers only//
+//This measure calculates the linear regression of the average amount by month//
+//The measure uses the LINESTX function to calculate the linear regression of the average amount by month//
+//The result is the linear regression of the average amount by month//
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 measure linear regression = 
     var data = LINESTX(ALLSELECTED(table[months]), [avg. amount], table[months])

@@ -1,5 +1,11 @@
 ----------------------------------------------------------------------------------------------------
---Create Table--
+--Create View--
+--Create a new view in the database.
+--The CREATE VIEW statement is used to create a view in a database.
+--The view_name is the name of the view.
+--The view is a virtual table that consists of columns from one or more tables.
+--The view does not store data in the database.
+--The view is a result set of a stored query.
 ----------------------------------------------------------------------------------------------------
 create or replace view view_name as 
 

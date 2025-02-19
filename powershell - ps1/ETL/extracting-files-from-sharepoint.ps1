@@ -1,6 +1,16 @@
 """
 ####################################################################################################
 This script helps you to extract files from Sharepoint.
+
+Pre-requisites:
+1. Powershell
+2. SharepointPnPPowershellOnline
+
+Steps:
+1. Run the script
+2. The script will extract the files from Sharepoint and save it to the local directory
+3. You can use the files for further processing
+
 ####################################################################################################
 """
 $user = $Env:USERNAME

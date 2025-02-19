@@ -1,6 +1,16 @@
 """
 ####################################################################################################
 This script helps you to load files to Sharepoint.
+
+Pre-requisites:
+1. Powershell
+2. SharepointPnPPowershellOnline
+
+Steps:
+1. Run the script
+2. The script will load the files to Sharepoint
+3. You can use the files for further processing
+
 ####################################################################################################
 """
 $user = $Env:USERNAME

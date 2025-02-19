@@ -1,5 +1,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //Evaluate a column base on previous value//
+//This script will add a column to the table that evaluates if the current value is greater than the previous value.//
+//The script uses the Table.AddIndexColumn function to add an index column to the table.//
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 let
     Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WMjQwMDIwVorVATKNjA3ADCBtYmACETQ1MYCKmhkAgalSbCwA", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Value = _t]),

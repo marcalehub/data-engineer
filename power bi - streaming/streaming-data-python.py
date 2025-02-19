@@ -1,6 +1,22 @@
 """
 ####################################################################################################
 Streaming data using python to Power BI Streaming Dataset
+
+This script is used to stream data to Power BI Streaming Dataset.
+The data is sent to Power BI every 10 seconds.
+The data is sent in JSON format.
+
+Pre-requisites:
+1. Power BI account
+2. Power BI Streaming Dataset
+3. Power BI Streaming Dataset API link
+4. Python
+
+Steps:
+1. Get the API link of the Power BI Streaming Dataset
+2. Install Requests library using pip
+3. Run the script
+
 ####################################################################################################
 """
 import requests

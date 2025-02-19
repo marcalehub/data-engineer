@@ -1,6 +1,15 @@
 """
 ####################################################################################################
 This script helps you to keep app files up to date on destination removing manual drag and drop
+
+Pre-requisites:
+1. Powershell
+
+Steps:
+1. Run the script
+2. The script will update the files on the destination folder
+3. You can use the files for further processing
+
 ####################################################################################################
 """
 function global:update-subfolderFiles{

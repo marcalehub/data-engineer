@@ -1,5 +1,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //Measure to peform calculation partition by an attribute//
+//This measure calculates the ratio of the amount of a row to the total amount of the partitioned attribute//
+//The measure uses the SUM function to calculate the total amount of the table//
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 measure partition by = 
     var amount = SUM(table[amount $])

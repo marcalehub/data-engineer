@@ -1,6 +1,14 @@
 """
 ####################################################################################################
 Dinamic Query using Powershell, passing variable define through the stament to avoid reworks
+
+Pre-requisites:
+1. Powershell
+
+Steps:
+1. Run the script
+2. The script will return the query with the date range
+3. You can use the query for further processing
 ####################################################################################################
 """
 $start_date = get-date -Year (get-date).Year -Month 1 -Day 1 -format "MM-dd-yy"

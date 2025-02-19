@@ -1,6 +1,15 @@
 """
 ####################################################################################################
 This script helps you to read all files from a directory.
+
+Pre-requisites:
+1. Powershell
+
+Steps:
+1. Run the script
+2. The script will read all files from the directory
+3. You can use the files for further processing
+
 ####################################################################################################
 """
 $user = $Env:USERNAME

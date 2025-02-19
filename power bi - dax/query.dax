@@ -1,5 +1,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //Query structure using DAX//
+//This is a simple example of how to create a query using DAX, passing variables to the query to avoid reworks.
+//In this example, we are creating a query that filters a table by a date field, using the start and end of the year as the filter.
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 DEFINE
 	VAR filters = 

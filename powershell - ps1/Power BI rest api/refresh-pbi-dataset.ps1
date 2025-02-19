@@ -1,6 +1,18 @@
 """
 ####################################################################################################
 This script helps you to schedule dataset update from powershell.
+
+Pre-requisites:
+1. Powershell
+2. Power BI Service Account
+3. Power BI Workspace ID
+4. Power BI Dataset ID
+
+Steps:
+1. Run the script
+2. The script will update the dataset
+3. You can use the dataset for further processing
+
 ####################################################################################################
 """
 Login-PowerBIServiceAccount #Log in to power bi service
