@@ -7,10 +7,11 @@
 (pattern as text, str as text)=>
 let html = "
     <script>    
-            var regex = """&pattern&""";
+            var regex = /"&pattern&"/g;
             var str = """&str&""";
             var res = str.match(regex);
             document.write(res);
+            //document.write(res.join(', ')) multiple matches
     </script>",
     result = Web.Page(html)[Data]{0}[Children]{0}[Children]{1}[Text]{0}
 
